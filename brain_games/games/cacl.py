@@ -16,12 +16,14 @@ def calculate(num1, num2, operator):
 
 
 def generate_round_data():
-    num1 = random.randint(-50, 50)
-    num2 = random.randint(-50, 50)
+    num1 = random.randint(1, 20)
+    num2 = random.randint(1, 20)
     operator = random.choice(['+', '-', '*'])
 
+    # Форматирование строки вопроса
     question = f"{num1} {operator} {num2}"
     correct_answer = str(calculate(num1, num2, operator))
 
     return question, correct_answer
+
 
